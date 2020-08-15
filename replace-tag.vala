@@ -3,9 +3,9 @@ public void convert (string line) {
     int last = line.index_of (".", initial);
     string substring = line.substring (initial, last - initial);
 
-    //  stdout.printf (@"$initial\n");
-    //  stdout.printf (@"$last\n");
-    //  stdout.printf (@"$substring\n");
+    stdout.printf (@"$initial\n");
+    stdout.printf (@"$last\n");
+    stdout.printf (@"$substring\n");
 
     string convert_line = line.replace ("""### %s.""".printf (substring), """<h1>%s</h1>""".printf (substring));
     stdout.printf (@"Output: $convert_line\n");
